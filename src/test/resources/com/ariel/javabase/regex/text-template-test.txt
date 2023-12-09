@@ -1,0 +1,4 @@
+${name}是一个${good}人
+${name}是一个${good}人
+${name1}是一个${good1}人
+${}是一个${good1}人
