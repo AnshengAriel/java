@@ -11,6 +11,9 @@
     <modules>
         <module>base</module>
         <module>io</module>
+        <module>dynamic-proxy</module>
+        <module>jdk</module>
+        <module>maven</module>
     </modules>
 
     <properties>
@@ -31,16 +34,6 @@
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>2.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjdk.jol</groupId>
-            <artifactId>jol-core</artifactId>
-            <version>0.17</version>
         </dependency>
     </dependencies>
 </project>

@@ -1,12 +1,15 @@
 package com.ariel.java.io.filter;
 
-import com.ariel.javabase.io.UserVo;
+import com.ariel.java.io.UserVo;
 import org.junit.Test;
 
 import java.io.*;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
+/**
+ * 对象的序列化
+ */
 public class ObjectIOStreamTest {
 
     @Test
