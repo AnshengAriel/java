@@ -96,6 +96,7 @@ public class CglibDynamicProxyTest {
     public void generate(Callback callback, String num) throws Exception {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(HelloServiceImpl.class);
+//        enhancer.setSuperclass(UserService.class);
         enhancer.setCallbacks(new Callback[]{callback, NoOp.INSTANCE});
         enhancer.setCallbackTypes(new Class[]{callback.getClass(), NoOp.class});
         enhancer.setCallbackFilter(new CglibCallbackFilter());
@@ -105,6 +106,7 @@ public class CglibDynamicProxyTest {
         Field field = AbstractClassGenerator.class.getDeclaredField("className");
         field.setAccessible(true);
         field.set(enhancer, packageName + ".HelloServiceImpl$$EnhancerByCGLIB$$" + num);
+//        field.set(enhancer, packageName + ".UserService$$EnhancerByCGLIB$$" + num);
 
         DebuggingClassWriter writer = new DebuggingClassWriter(2);
         enhancer.generateClass(writer);
@@ -113,6 +115,7 @@ public class CglibDynamicProxyTest {
 
         String path = ClassLoader.getSystemResource(HelloServiceImpl.class.getPackage().getName().replace('.', '/')).getFile();
         path = path + "/HelloServiceImpl$$EnhancerByCGLIB$$"+ num +".class";
+//        path = path + "/UserService$$EnhancerByCGLIB$$"+ num +".class";
         System.out.println("path = " + path);
         try (FileOutputStream out = new FileOutputStream(path)) {
             out.write(bytes);
