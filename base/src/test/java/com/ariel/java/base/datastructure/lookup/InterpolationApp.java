@@ -1,6 +1,6 @@
 package com.ariel.java.base.datastructure.lookup;
 
-import com.ariel.javabase.datastructure.sort.Shell;
+import com.ariel.java.base.datastructure.sort.Shell;
 import org.junit.Test;
 
 public class InterpolationApp {

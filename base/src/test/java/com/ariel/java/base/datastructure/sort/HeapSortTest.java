@@ -1,6 +1,6 @@
 package com.ariel.java.base.datastructure.sort;
 
-import com.ariel.javabase.datastructure.tree.HeapSort;
+import com.ariel.java.base.datastructure.tree.HeapSort;
 import org.junit.Test;
 
 import java.util.Arrays;

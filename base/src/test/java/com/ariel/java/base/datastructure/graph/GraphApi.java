@@ -2,7 +2,7 @@ package com.ariel.java.base.datastructure.graph;
 
 import org.junit.Test;
 
-import static com.ariel.javabase.datastructure.graph.Graph.VERTEX.*;
+import static com.ariel.java.base.datastructure.graph.Graph.VERTEX.*;
 
 
 public class GraphApi {

@@ -1,6 +1,6 @@
 package com.ariel.java.base.concurrent.aqs;
 
-import com.ariel.javabase.concurrent.lock.BoundedBuffer;
+import com.ariel.java.base.concurrent.lock.BoundedBuffer;
 import org.junit.Test;
 
 // TODO

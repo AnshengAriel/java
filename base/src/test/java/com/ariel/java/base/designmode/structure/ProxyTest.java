@@ -1,7 +1,5 @@
 package com.ariel.java.base.designmode.structure;
 
-import org.assertj.core.internal.cglib.proxy.Enhancer;
-import org.assertj.core.internal.cglib.proxy.MethodInterceptor;
 import org.junit.Test;
 
 import java.lang.reflect.Proxy;
@@ -25,15 +23,6 @@ public class ProxyTest {
                 (proxy, method, args) -> method.invoke(new Target(), args)
         );
         targetProxy.name();
-    }
-
-    @Test
-    public void testCglibProxy() {
-        Enhancer enhancer = new Enhancer();
-        enhancer.setSuperclass(Target.class);
-        enhancer.setCallback((MethodInterceptor) (o, method, objects, methodProxy) -> methodProxy.invoke(new Target(), objects));
-        Target target = (Target) enhancer.create();
-        target.name();
     }
 
     interface TargetInterface {

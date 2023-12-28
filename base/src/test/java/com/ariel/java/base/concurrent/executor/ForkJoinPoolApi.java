@@ -1,8 +1,8 @@
 package com.ariel.java.base.concurrent.executor;
 
-import com.ariel.javabase.concurrent.executor.SimpleRecursiveAction;
-import com.ariel.javabase.concurrent.executor.SimpleRecursiveTask;
-import com.ariel.javabase.util.OU;
+import com.ariel.java.base.concurrent.executor.SimpleRecursiveAction;
+import com.ariel.java.base.concurrent.executor.SimpleRecursiveTask;
+import com.ariel.java.base.util.OU;
 import org.junit.Test;
 
 import java.util.concurrent.ExecutionException;

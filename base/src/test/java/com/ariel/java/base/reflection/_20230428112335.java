@@ -1,6 +1,6 @@
 package com.ariel.java.base.reflection;
 
-import com.ariel.javabase.reflection.b.DemoA;
+import com.ariel.java.base.reflection.b.DemoA;
 import org.junit.Test;
 
 import java.lang.reflect.ParameterizedType;

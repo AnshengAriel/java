@@ -1,6 +1,6 @@
 package com.ariel.java.base.collection.queue;
 
-import com.ariel.javabase.collection.DelayedOrder;
+import com.ariel.java.base.collection.DelayedOrder;
 import org.junit.Test;
 
 import java.util.concurrent.DelayQueue;

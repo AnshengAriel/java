@@ -1,6 +1,6 @@
 package com.ariel.java.base.concurrent.future;
 
-import com.ariel.javabase.util.OU;
+import com.ariel.java.base.util.OU;
 import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;

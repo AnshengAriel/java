@@ -1,6 +1,6 @@
 package com.ariel.java.base.collection.queue;
 
-import com.ariel.javabase.collection.AqsLock;
+import com.ariel.java.base.collection.AqsLock;
 import org.junit.Test;
 
 import java.lang.reflect.Field;

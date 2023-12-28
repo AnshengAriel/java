@@ -1,7 +1,7 @@
 package com.ariel.java.base.reflection;
 
-import com.ariel.javabase.reflection.a.D;
-import com.ariel.javabase.reflection.a.F;
+import com.ariel.java.base.reflection.a.D;
+import com.ariel.java.base.reflection.a.F;
 import org.junit.Assert;
 import org.junit.Test;
 

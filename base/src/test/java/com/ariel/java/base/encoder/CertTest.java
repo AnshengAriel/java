@@ -1,6 +1,6 @@
 package com.ariel.java.base.encoder;
 
-import com.ariel.javabase.jvm.Main;
+import com.ariel.java.base.jvm.Main;
 import org.junit.Test;
 
 import javax.crypto.Cipher;
