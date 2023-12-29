@@ -1,7 +1,6 @@
 package com.ariel.java.base.jvm.init;
 
 import org.junit.Test;
-import sun.misc.Launcher;
 
 import java.net.URL;
 
@@ -15,7 +14,7 @@ public class ClassLoaderTest {
 
     @Test
     public void getClassLoader() {
-        ClassLoader classLoader = Launcher.getLauncher().getClassLoader();
+        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
         System.out.println("classLoader = " + classLoader); // sun.misc.Launcher$AppClassLoader@18b4aac2
         System.out.println("classLoader.getParent() = " + classLoader.getParent()); // sun.misc.Launcher$ExtClassLoader@677327b6
         System.out.println("classLoader.getParent().getParent() = " + classLoader.getParent().getParent()); // null
@@ -28,7 +27,8 @@ public class ClassLoaderTest {
     public void loadUrls() {
         // 引导类加载器管理的目录
         System.out.println("---------------------Bootstrap----------------------");
-        URL[] urLs = Launcher.getBootstrapClassPath().getURLs();
+//        URL[] urLs = Launcher.getBootstrapClassPath().getURLs();
+        URL[] urLs = null;
         for (URL url : urLs) {
             System.out.println("url = " + url);
         }
